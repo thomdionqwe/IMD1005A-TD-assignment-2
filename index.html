@@ -3,11 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    
-    <p>Hello world!</p>
+    <title>Home - Steve Prince</title>
+    <link rel="icon" type="image/x-icon" href="/images/icons/book 1.svg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
 
+    <!-- Load fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   </head>
+<body>
+    <nav>
+        <span class="logo"><img src="images/icons/feather 1.svg">Steve Prince</span>
+        <ul class="menu">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+            <li><a>QOTD</a></li>
+        </ul>
+        <img class="hamburger" src="images/icons/Hamburger.svg">
+        <script src="js/hamburger.js"></script>
+    </nav>
+
+    <section class="banner">
+        <span class="icon-header"><img src="images/icons/book 1.svg">Writer & Storyteller</span>
+        <h1>Steve Prince</h1>
+        Crafting Stories that explore the human condition through short stories, poetry, and prose.
+    </section>
+
+    <section class="about">
+        <span class="icon-header"><img src="images/icons/Person.svg"><h1>About Steve</h1></span>
+        <p>Steve Prince is an indie writer with a passion for exploring the depths of human experience through carefully crafted prose and poetry. Drawing inspiration from everyday moments and universal truths, his work resonates with readers seeking authentic, thought-provoking narratives.</p>
+        <p>With a growing collection of short stories and poems, Steve has developed a distinctive voice that balances introspection with accessibility. His writing delves into themes of identity, connection, and the quiet revelations found in ordinary life.</p>
+        <p>When not writing, Steve can be found reading contemporary fiction, exploring local coffee shops, and observing the world with the curiosity of a perpetual student of the human condition.</p>
+    </section>
+
+    <section class="works">
+        <span class="icon-header"><img src="images/icons/Journal.svg"><h1>Works</h1></span>
+        <span class="slider">
+            <input type="radio" id="all" name="sort" checked>
+            <label for="all">All</label>
+            <input type="radio" id="stories" name="sort">
+            <label for="stories">Stories</label>
+            <input type="radio" id="poems" name="sort">
+            <label for="poems">Poems</label>
+            <input type="radio" id="essays" name="sort">
+            <label for="essays">Essays</label>
+        </span>
+        <span class="grid" id="gallery">
+            <template id="card">
+                <span class="card">
+                    <h1 id="title">Card Title</h1>
+                    <ul class="tags">
+                        <li id="type">Type</li>
+                        <li id="word count">1200 Words</li>
+                    </ul>
+                    <p id="excerpt">excerpt text</p>
+                    <small id="date">December 2025</small>
+                </span>
+            </template>
+            
+        <script src="js/data.js"></script>
+        <script src="js/works.js"></script>
+
+    </section>
+
+    <footer>
+        <span><img class="logo"></span>
+        © 2026 Steve Prince. All rights reserved. <br>
+        Indie writer exploring the human condition through words.
+    </footer>
 </body>
 </html>
