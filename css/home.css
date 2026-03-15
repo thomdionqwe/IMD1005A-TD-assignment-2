@@ -1,0 +1,111 @@
+section.banner {
+    display: flex;
+    padding: 64px var(--Side-Padding);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+
+    background: var(--Steve-Blue);
+    color: var(--Inverted-Text);
+    * {
+        color: var(--Inverted-Text);
+    }
+    
+
+    > h1 {
+        font-family: 'Merriweather';
+        font-size: 56px;
+        font-weight: 900;
+        margin: 0px;
+    }
+}
+
+section.about {
+    padding: var(--Section-Padding, 64px) var(--Side-Padding, 192px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+section.works {
+    display: flex;
+    padding: var(--Section-Padding, 64px) var(--Side-Padding, 192px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    background: var(--BGp1, #F5F6F7);
+
+    span.grid {
+        display: inline-grid;
+        padding: 8px 0;
+        row-gap: 16px;
+        column-gap: 16px;
+        align-self: stretch;
+        grid-template-rows: fit-content(100%);
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+
+span.card {
+    display: flex;
+    height: stretch;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    justify-self: stretch;
+
+    border-radius: 10px;
+    border: var(--Outline-Thickness, 1px) solid var(--Outline-Color, #C0C1C2);
+    background: var(--BG, #FFF);
+
+    color: var(--Light-Text, #49515D);
+    *{
+        margin: 0px;
+        color: var(--Light-Text, #49515D);
+    }
+}
+
+ul.tags {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+        display: inline-flex;
+        padding: 4px 8px;
+        align-items: center;
+        gap: 10px;
+
+        border-radius: 5px;
+        border: 0.25px solid var(--Outline-Color, #C0C1C2);
+        background: var(--BGp1, #F5F6F7);
+
+        /* Text Formatting */
+        color: var(--Light-Text, #49515D);
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    li.blue {
+        background: #D4E4FF;
+        color: #013B8C;
+    }
+    li.green {
+        background: #D8FFD4;
+        color: #005E05;
+    }
+    li.purple {
+        background: #E8D4FF;
+        color: #6A0068;
+    }
+}
